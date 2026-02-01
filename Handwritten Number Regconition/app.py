@@ -1,11 +1,14 @@
 import cv2
 import numpy as np
 import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'        # Tắt thông báo oneDNN
 from tensorflow import keras
 
 # --- CẤU HÌNH ---
-MODEL_PATH = 'bestmodel.keras'  # Đường dẫn tới file model của ông
-SEGMENTED_DIR = 'output_digit'  # Thư mục chứa các ảnh đã cắt từ file segmentation.py
+
+# --- CẤU HÌNH ---
+MODEL_PATH = os.path.join('bestmodel.keras')
+SEGMENTED_DIR = os.path.join('output_digit') # Sửa ở đây nè ông
 
 # 1. Load Model
 if not os.path.exists(MODEL_PATH):

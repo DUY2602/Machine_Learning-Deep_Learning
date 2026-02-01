@@ -5,7 +5,7 @@ import os
 
 # --- CẤU HÌNH ---
 # Bà nhớ check đúng tên file hình nha
-INPUT_FILE = 'input_image/test2.jpg'  
+INPUT_FILE = 'input_image/test.jpg'  
 OUTPUT_DIR = 'output_digit'
 
 if not os.path.exists(OUTPUT_DIR):
