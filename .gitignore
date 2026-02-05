@@ -1,0 +1,12 @@
+# Chặn các folder dataset nặng
+MALWARE_DATASET/
+BENIGN_DATASET/
+
+# Chặn file thực thi và dữ liệu lớn lỡ tay để trong project
+*.exe
+*.zip
+*.rar
+
+# Chặn cache của Python
+__pycache__/
+*.pyc
